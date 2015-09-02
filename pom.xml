@@ -4,7 +4,7 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
   <packaging>jar</packaging>
-  <version>3.0-SNAPSHOT</version>
+  <version>3.0</version>
   <name>my-app</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -17,16 +17,14 @@
   </dependencies>
 <distributionManagement>
 		<repository>
-			<id>wfxrepo-releases</id>
-			<name>wfxrepo-releases</name>
+			<id>releases</id>
+			<name>libs-release</name>
 			<url>http://localhost:8081/artifactory/libs-release</url>
 		</repository>
 		<snapshotRepository>
-			<id>wfxrepo-snapshots</id>
-			<name>wfxrepo-snapshots</name>
-			<url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+			<id>snapshots</id>
+			<name>libs-snapshot</name>
+			<url>http://localhost:8081/artifactory/libs-snapshot</url>
 		</snapshotRepository>
 	</distributionManagement>
-
-
 </project>
